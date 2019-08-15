@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+
+  web:
+    build: .
+    restart: always
+    ports:
+      - "8305:80"
+    environment:
+      - FLAG=flag{test}
